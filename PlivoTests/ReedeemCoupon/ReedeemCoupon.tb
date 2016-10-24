@@ -1,0 +1,11 @@
+{
+  "References":{"MyBrowser":"DesktopBrowser"},
+
+   "MyBrowser":
+                    {
+    					"SELENIUMSERVERIP" : "localhost",
+    					"URL"	: "https://manage.plivo.com",
+    					"BROWSER"		: "Firefox"	
+                    }
+}
+    

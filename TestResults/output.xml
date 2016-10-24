@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161023 23:43:08.560" generator="Robot 3.0 (Python 2.7.11 on darwin)">
+<suite source="/Users/tarun/Documents/WorkSpace/Plivo/PlivoTests" id="s1" name="PlivoTests">
+<kw type="setup" name="Global Tb Parser" library="Parsers">
+<msg timestamp="20161023 23:43:08.714" level="INFO">Parsing global Test Bed File</msg>
+<msg timestamp="20161023 23:43:08.716" level="INFO">/Users/tarun/Documents/WorkSpace/Plivo</msg>
+<msg timestamp="20161023 23:43:08.717" level="INFO">${parserFlag} = 0</msg>
+<msg timestamp="20161023 23:43:08.718" level="INFO">${globalTestBed} = {u'AutomationServer': {u'HOME_PATH': u'/Users/tarun/Documents/WorkSpace/Plivo'}, u'DesktopBrowser': {u'URL': 'https://manage.plivo.com', u'SELENIUMSERVERIP': u'192.168.1.8', u'BROWSER': u'Safari'}}</msg>
+<msg timestamp="20161023 23:43:08.718" level="INFO">${parserFlag} = 1</msg>
+<status status="PASS" endtime="20161023 23:43:08.718" starttime="20161023 23:43:08.714"></status>
+</kw>
+<suite source="/Users/tarun/Documents/WorkSpace/Plivo/PlivoTests/ReedeemCoupon" id="s1-s1" name="ReedeemCoupon">
+<kw type="setup" name="Global Tb Parser" library="Parsers">
+<msg timestamp="20161023 23:43:08.724" level="INFO">Parsing global Test Bed File</msg>
+<msg timestamp="20161023 23:43:08.725" level="INFO">/Users/tarun/Documents/WorkSpace/Plivo</msg>
+<msg timestamp="20161023 23:43:08.725" level="INFO">${parserFlag} = 0</msg>
+<msg timestamp="20161023 23:43:08.725" level="INFO">${globalTestBed} = {u'AutomationServer': {u'HOME_PATH': u'/Users/tarun/Documents/WorkSpace/Plivo'}, u'DesktopBrowser': {u'URL': 'https://manage.plivo.com', u'SELENIUMSERVERIP': u'192.168.1.8', u'BROWSER': u'Safari'}}</msg>
+<msg timestamp="20161023 23:43:08.726" level="INFO">${parserFlag} = 1</msg>
+<status status="PASS" endtime="20161023 23:43:08.726" starttime="20161023 23:43:08.723"></status>
+</kw>
+<suite source="/Users/tarun/Documents/WorkSpace/Plivo/PlivoTests/ReedeemCoupon/ReedeemCoupon.robot" id="s1-s1-s1" name="ReedeemCoupon">
+<kw type="setup" name="Local Tb Parser" library="Parsers">
+<msg timestamp="20161023 23:43:08.730" level="INFO">Parsing Local Test Bed File</msg>
+<msg timestamp="20161023 23:43:08.733" level="INFO">${references} = {u'MyBrowser': {u'URL': u'https://manage.plivo.com', u'SELENIUMSERVERIP': u'localhost', u'BROWSER': u'Firefox'}}</msg>
+<status status="PASS" endtime="20161023 23:43:08.733" starttime="20161023 23:43:08.730"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Verify HomePage">
+<kw type="setup" name="Open MyBrowser">
+<kw name="Open Browser" library="CreateDeviceSession">
+<arguments>
+<arg>MyBrowser</arg>
+</arguments>
+<msg timestamp="20161023 23:43:08.737" level="INFO">About to launch Browser</msg>
+<msg timestamp="20161023 23:43:08.762" level="FAIL">WebDriverException: Message: Error forwarding the new session cannot find : Capabilities [{browserName=safari, javascriptEnabled=true, version=, platform=MAC}]
+Stacktrace:
+    at org.openqa.grid.web.servlet.handler.RequestHandler.process (RequestHandler.java:115)
+    at org.openqa.grid.web.servlet.DriverServlet.process (DriverServlet.java:83)
+    at org.openqa.grid.web.servlet.DriverServlet.doPost (DriverServlet.java:67)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:707)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:790)
+    at org.seleniumhq.jetty9.servlet.ServletHolder.handle (ServletHolder.java:808)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle (ServletHandler.java:587)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle (SessionHandler.java:221)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle (ContextHandler.java:1127)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doScope (ServletHandler.java:515)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doScope (SessionHandler.java:185)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope (ContextHandler.java:1061)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:141)
+    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:97)
+    at org.seleniumhq.jetty9.server.Server.handle (Server.java:499)
+    at org.seleniumhq.jetty9.server.HttpChannel.handle (HttpChannel.java:310)
+    at org.seleniumhq.jetty9.server.HttpConnection.onFillable (HttpConnection.java:257)
+    at org.seleniumhq.jetty9.io.AbstractConnection$2.run (AbstractConnection.java:540)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob (QueuedThreadPool.java:635)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run (QueuedThreadPool.java:555)
+    at java.lang.Thread.run (Thread.java:745)</msg>
+<status status="FAIL" endtime="20161023 23:43:08.763" starttime="20161023 23:43:08.736"></status>
+</kw>
+<status status="FAIL" endtime="20161023 23:43:08.763" starttime="20161023 23:43:08.735"></status>
+</kw>
+<kw type="teardown" name="Close MyBrowser">
+<kw name="Close Session" library="CreateDeviceSession">
+<msg timestamp="20161023 23:43:08.764" level="FAIL">AttributeError: CreateDeviceSession instance has no attribute 'driver'</msg>
+<status status="FAIL" endtime="20161023 23:43:08.764" starttime="20161023 23:43:08.764"></status>
+</kw>
+<status status="FAIL" endtime="20161023 23:43:08.764" starttime="20161023 23:43:08.763">AttributeError: CreateDeviceSession instance has no attribute 'driver'</status>
+</kw>
+<status status="FAIL" endtime="20161023 23:43:08.765" critical="yes" starttime="20161023 23:43:08.734">Setup failed:
+WebDriverException: Message: Error forwarding the new session cannot find : Capabilities [{browserName=safari, javascriptEnabled=true, version=, platform=MAC}]
+Stacktrace:
+    at org.openqa.grid.web.servlet.handler.RequestHandler.process (RequestHandler.java:115)
+    at org.openqa.grid.web.servlet.DriverServlet.process (DriverServlet.java:83)
+    at org.openqa.grid.web.servlet.DriverServlet.doPost (DriverServlet.java:67)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:707)
+    at javax.servlet.http.HttpServlet.service (HttpServlet.java:790)
+    at org.seleniumhq.jetty9.servlet.ServletHolder.handle (ServletHolder.java:808)
+    at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle (ServletHandler.java:587)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle (SessionHandler.java:221)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle (ContextHandler.java:1127)
+    [ Message content over the limit has been removed. ]
+....seleniumhq.jetty9.servlet.ServletHandler.doScope (ServletHandler.java:515)
+    at org.seleniumhq.jetty9.server.session.SessionHandler.doScope (SessionHandler.java:185)
+    at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope (ContextHandler.java:1061)
+    at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle (ScopedHandler.java:141)
+    at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle (HandlerWrapper.java:97)
+    at org.seleniumhq.jetty9.server.Server.handle (Server.java:499)
+    at org.seleniumhq.jetty9.server.HttpChannel.handle (HttpChannel.java:310)
+    at org.seleniumhq.jetty9.server.HttpConnection.onFillable (HttpConnection.java:257)
+    at org.seleniumhq.jetty9.io.AbstractConnection$2.run (AbstractConnection.java:540)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob (QueuedThreadPool.java:635)
+    at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$3.run (QueuedThreadPool.java:555)
+    at java.lang.Thread.run (Thread.java:745)
+
+Also teardown failed:
+AttributeError: CreateDeviceSession instance has no attribute 'driver'</status>
+</test>
+<status status="FAIL" endtime="20161023 23:43:08.765" starttime="20161023 23:43:08.726"></status>
+</suite>
+<status status="FAIL" endtime="20161023 23:43:08.766" starttime="20161023 23:43:08.718"></status>
+</suite>
+<status status="FAIL" endtime="20161023 23:43:08.767" starttime="20161023 23:43:08.562"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="PlivoTests" pass="0">PlivoTests</stat>
+<stat fail="1" id="s1-s1" name="ReedeemCoupon" pass="0">PlivoTests.ReedeemCoupon</stat>
+<stat fail="1" id="s1-s1-s1" name="ReedeemCoupon" pass="0">PlivoTests.ReedeemCoupon.ReedeemCoupon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

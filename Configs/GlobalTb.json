@@ -1,0 +1,15 @@
+{
+	
+    "DesktopBrowser":
+                    {
+    					"SELENIUMSERVERIP" : "192.168.1.8",
+    					"URL"	: "https://manage.plivo.com",
+    					"BROWSER"		: "Firefox"	
+                    },
+
+    "AutomationServer" :
+                        {
+                        "HOME_PATH" : "/Users/tarun/Documents/WorkSpace/Plivo"
+                        }     
+}
+    

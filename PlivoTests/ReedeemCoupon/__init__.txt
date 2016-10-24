@@ -1,0 +1,5 @@
+*** Settings ***
+Library    ${CURDIR}/../../InfrastructureLibs/CreateDeviceSession.py
+Library    ${CURDIR}/../../InfrastructureLibs/Parsers.py
+
+Suite Setup    Global Tb Parser

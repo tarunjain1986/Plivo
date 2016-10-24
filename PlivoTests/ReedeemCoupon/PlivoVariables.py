@@ -1,0 +1,3 @@
+USERID = "tjain"
+USERPWD = "plivo@123"
+WRONGCOUPON="COUPONCODE"
